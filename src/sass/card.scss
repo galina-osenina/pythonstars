@@ -4,127 +4,11 @@
   justify-content: flex-start;
 
   @media (min-width: $tablet) {
-    margin: 0px -20px;
-  }
-
-  .card:not(.card_bg_color) {
-    &:nth-child(1) {
-      .card__icon {
-        background-color: #f4976c;
-      }
-    }
-
-    &:nth-child(2) {
-      .card__icon {
-        background-color: #cfbc81;
-      }
-    }
-
-    &:nth-child(3) {
-      .card__icon {
-        background-color: #3aafa9;
-      }
-    }
-
-    &:nth-child(4) {
-      .card__icon {
-        background-color: #b39ddb;
-      }
-    }
-
-    &:nth-child(5) {
-      .card__icon {
-        background-color: #4d6e9b;
-      }
-    }
-
-    &:nth-child(6) {
-      .card__icon {
-        background-color: #f48fb1;
-      }
-    }
-
-    &:nth-child(7) {
-      .card__icon {
-        background-color: #479860;
-      }
-    }
-
-    &:nth-child(8) {
-      .card__icon {
-        background-color: #5de5e0;
-      }
-    }
+    margin: 45px -15px;
   }
 
   .card_bg_color {
-    &:nth-child(1) {
-      background-color: #f4976c;
-
-      .card__icon {
-        color: #f4976c;
-      }
-    }
-
-    &:nth-child(2) {
-      background-color: #cfbc81;
-
-      .card__icon {
-        color: #cfbc81;
-      }
-    }
-
-    &:nth-child(3) {
-      background-color: #3aafa9;
-
-      .card__icon {
-        color: #3aafa9;
-      }
-    }
-
-    &:nth-child(4) {
-      background-color: #b39ddb;
-
-      .card__icon {
-        color: #b39ddb;
-      }
-    }
-
-    &:nth-child(5) {
-      background-color: #4d6e9b;
-
-      .card__icon {
-        color: #4d6e9b;
-      }
-    }
-
-    &:nth-child(6) {
-      background-color: #f48fb1;
-
-      .card__icon {
-        color: #f48fb1;
-      }
-    }
-
-    &:nth-child(7) {
-      background-color: #479860;
-
-      .card__icon {
-        color: #479860;
-      }
-    }
-
-    &:nth-child(8) {
-      background-color: #5de5e0;
-
-      .card__icon {
-        color: #5de5e0;
-      }
-    }
-
-    .card__icon {
-      background-color: #fff;
-    }
+    background-color: rgba(112, 118, 149, 0.29);
   }
 }
 
@@ -132,16 +16,24 @@
   margin-top: 50px!important;
 }
 
+.card-list-nom {
+  margin: 0 -20px;
+}
+
+.card-list-nomb {
+  margin-bottom: 0;
+}
+
 .card {
-  width: 100%;
-  background-color: $color-tertiary;
-  color: #fff;
-  padding: 16px;
-  margin: 10px 0;
-  border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: #f9f9f9;
+  background-color: $color-tertiary;
+  width: 100%;
+  border-radius: 4px;
+  padding: 36px 20px;
+  margin: 10px 0;
 
   @media (min-width: $tablet) {
     width: 290px;
@@ -155,13 +47,9 @@
 }
 
 .card_bg_light {
-  color: #1d1d1d;
-  background-color: #eae9eb;
-  min-height: 290px;
-
-  .card__icon {
-    color: #fff;
-  }
+  color: #04070b;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
 }
 
 .card_size_md {
@@ -170,20 +58,40 @@
   }
 }
 
-.card__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 34px;
-  width: 60px;
-  height: 60px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-bottom: 20px;
+.card__label {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: $color-secondary;
+  padding: 5px 20px;
+  margin-left: -20px;
+}
+
+.card__label_news {
+  background-color: $color-news;
+}
+
+.card__label_media {
+  background-color: $color-media;
+}
+
+.card__label_blog {
+  background-color: $color-blog;
+}
+
+.card__date {
+  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 .card__title {
   margin-bottom: 15px;
+}
+
+.card__title_sm {
+  font-size: 21px;
+  line-height: 1.7;
+  margin-bottom: 70px;
 }
 
 .card_bg_image {
@@ -203,7 +111,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #1f1d25;
+    background-color: $color-tertiary;
     opacity: 0.9;
     z-index: -1;
   }
@@ -225,48 +133,14 @@
   }
 }
 
-.card__category {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-.card-news {
- background-image: url("../images/blog1.jpg");
-
-  .card__icon {
-    background-color: #f4976c;
-  }
-}
-
-.card-blog {
-  background-image: url("../images/blog3.jpg");
-
-  .card__icon {
-    background-color: #b39ddb;
-  }
-}
-
-.card-blog-2 {
-  background-image: url("../images/blog4.jpg");
-
-  .card__icon {
-    background-color: #b39ddb;
-  }
-}
-
-.card-media {
-  .card__icon {
-    background-color: #5de5e0;
-  }
-}
-
 .card__text {
+  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
   width: 100%;
 }
 
 .card__text_mb {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .technology-list {

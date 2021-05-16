@@ -1,8 +1,10 @@
 .form {
+  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: $color-tertiary;
   background-color: #fff;
-  padding: 22px;
-  color: $text-color-secondary;
   border-radius: 3px;
+  padding: 22px;
 }
 
 .form__header {
@@ -14,15 +16,8 @@
 }
 
 .form__icon {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 34px;
-  width: 60px;
-  height: 60px;
-  background-color: $color-secondary;
-  border-radius: 50%;
+  color: #a29cbb;
+  font-size: 24px;
 }
 
 .form__note {

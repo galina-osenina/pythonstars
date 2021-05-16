@@ -4,20 +4,20 @@ a:focus {
 }
 
 .button {
+  text-align: center;
   font-size: 14px;
   line-height: 1;
   color: $text-color-primary;
-  text-transform: uppercase;
   text-decoration: none;
   border: 1px solid rgba(234, 234, 234, 0.22);
-  border-radius: 3px;
-  padding: 13px 30px;
+  border-radius: 4px;
+  padding: 13px 18px;
 
-  &:hover,
-  &:focus {
-    border-color: #fff;
-    outline: 0;
-  }
+  //&:hover,
+  //&:focus {
+  //  border-color: #fff;
+  //  outline: 0;
+  //}
 }
 
 .button_bg {
@@ -27,7 +27,6 @@ a:focus {
 
 .button_arrow {
   display: inline-block;
-  text-transform: uppercase;
   line-height: 1;
   padding: 13px 30px;
 
@@ -43,5 +42,16 @@ a:focus {
     border-right: none;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg) skew(200deg, 200deg);
+  }
+}
+
+.button_color_blue {
+  color: $color-blue;
+  border-color: $color-blue;
+
+  &:after {
+    border: 1px solid $color-blue;
+    border-bottom: none;
+    border-right: none;
   }
 }

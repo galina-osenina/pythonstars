@@ -1,5 +1,4 @@
 .h1 {
-  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 1.25;
@@ -10,7 +9,6 @@
 }
 
 .h2 {
-  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.33;
@@ -26,7 +24,6 @@
 }
 
 .h3 {
-  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
@@ -34,4 +31,13 @@
 
 .h3_space {
   margin: 20px 0;
+}
+
+.link {
+  color: $color-blue;
+}
+
+.text-limit {
+  width: 100%;
+  max-width: 550px;
 }
