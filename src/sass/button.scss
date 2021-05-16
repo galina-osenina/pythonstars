@@ -13,11 +13,11 @@ a:focus {
   border-radius: 4px;
   padding: 13px 18px;
 
-  &:hover,
-  &:focus {
-    border-color: #fff;
-    outline: 0;
-  }
+  //&:hover,
+  //&:focus {
+  //  border-color: #fff;
+  //  outline: 0;
+  //}
 }
 
 .button_bg {
@@ -46,11 +46,11 @@ a:focus {
 }
 
 .button_color_blue {
-  color: #3b52c2;
-  border-color: #3b52c2;
+  color: $color-blue;
+  border-color: $color-blue;
 
   &:after {
-    border: 1px solid #3b52c2;
+    border: 1px solid $color-blue;
     border-bottom: none;
     border-right: none;
   }
