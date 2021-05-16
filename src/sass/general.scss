@@ -5,14 +5,14 @@
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-SemiBold.ttf") format("opentype");
+  font-family: 'Trispace';
+  src: url("../fonts/Trispace-SemiBold.ttf") format("opentype");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-Regular.ttf") format("opentype");
+  font-family: 'Trispace';
+  src: url("../fonts/Trispace-Regular.ttf") format("opentype");
   font-weight: 400;
 }
 
@@ -23,10 +23,10 @@
 }
 
 body {
-  font-family: 'OpenSans', Helvetica, Arial, sans-serif;
+  font-family: 'Trispace', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  font-weight: 600;
+  font-weight: 400;
   background-color: $color-primary;
   color: $text-color-primary;
 }
@@ -52,6 +52,15 @@ p {
 }
 
 .section_bg {
+  background-color: $color-secondary;
+}
+
+.section_bg_light {
+  background-color: $color-primary-light;
+  color: $text-color-secondary;
+}
+
+.section_bg_blue {
   background-color: $color-secondary;
 }
 
@@ -120,13 +129,17 @@ main {
 
 .intro__content {
   @media (min-width: $tablet) {
-    flex: 3;
+    flex: 2;
   }
 }
 
 .subtitle {
+  display: inline-block;
   font-size: 14px;
+  line-height: 1;
   text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
 
   @media (min-width: $tablet) {
     margin-top: 25px;
@@ -153,10 +166,12 @@ main {
   margin-top: 30px;
 }
 
-.intro__button {
+.intro__button,
+.button.intro__button {
   display: inline-block;
   width: 240px;
   max-width: 100%;
+  padding: 20px 18px;
   margin-bottom: 10px;
   margin-right: 10px;
 
@@ -228,7 +243,7 @@ main {
 }
 
 .images__item {
-  max-width: 140px;
+  max-height: 36px;
   margin: 10px 80px 10px 0;
 
   &:last-child {
@@ -237,7 +252,10 @@ main {
 }
 
 .blockquote {
-  background-color: $color-tertiary;
+  color: #fff;
+  font-size: 18px;
+  background-color: #cc6633;
+  border-radius: 4px;
   padding: 10px;
 
   @media (min-width: $tablet) {
@@ -259,7 +277,6 @@ main {
     line-height: 1;
     font-weight: 400;
     font-style: italic;
-    color: #b39ddb;
   }
 
   &:before {
@@ -291,7 +308,7 @@ main {
   height: 60px;
   flex: 0 0 60px;
   border-radius: 50%;
-  background-color: #b39ddb;
+  background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
