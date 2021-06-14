@@ -7,6 +7,10 @@
   z-index: 1000;
 }
 
+.header_page_inner {
+  background-color: $color-inner;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
