@@ -21,13 +21,17 @@
   padding: 0;
 }
 
-body {
+.body {
   font-family: 'Trispace', Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.7;
   font-weight: 400;
   background-color: $color-primary;
   color: $text-color-primary;
+}
+
+.body_page_inner {
+  background-color: $color-inner;
 }
 
 p {
@@ -59,6 +63,11 @@ p {
   color: $text-color-secondary;
 }
 
+.section_bg_white {
+  background-color: #fff;
+  color: $text-color-secondary;
+}
+
 .section_bg_blue {
   background-color: $color-secondary;
 }
@@ -74,6 +83,10 @@ p {
 
 main {
   padding-top: 60px;
+}
+
+.intro_page_inner {
+  background-color: $color-inner;
 }
 
 .intro__content {
@@ -93,6 +106,7 @@ main {
 
 .intro__h1 {
   letter-spacing: 4px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -165,6 +179,7 @@ main {
 
 .entry-text {
   font-size: 18px;
+  line-height: 30px;
   max-width: 912px;
 }
 
@@ -181,6 +196,21 @@ main {
   margin: 20px;
 }
 
+.blockquote-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .blockquote {
+    width: 100%;
+    padding: 0;
+
+    @media (min-width: $tablet) {
+      width: 50%;
+    }
+  }
+}
+
 .blockquote {
   color: #fff;
   font-size: 18px;
@@ -190,9 +220,13 @@ main {
   margin: 30px 0;
 
   @media (min-width: $tablet) {
-    padding: 60px;
+    padding: 60px 45px;
     margin: 50px 0;
   }
+}
+
+.blockquote_nobg {
+  background: none;
 }
 
 .blockquote__content {
@@ -200,15 +234,7 @@ main {
   padding: 24px;
 
   @media (min-width: $tablet) {
-    padding: 50px 70px;
-  }
-
-  &:before,
-  &:after {
-    font-size: 55px;
-    line-height: 1;
-    font-weight: 400;
-    font-style: italic;
+    padding: 30px 50px 0;
   }
 
   &:before {
@@ -216,14 +242,10 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  &:after {
-    content: '"';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-left: 10px;
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: italic;
   }
 }
 
@@ -233,6 +255,7 @@ main {
 
 .blockquote__cite {
   justify-content: flex-end;
+  margin-top: 40px;
 }
 
 .person__avatar {
@@ -364,5 +387,27 @@ main {
 
 .section-map {
   margin-bottom: -8px;
+}
+
+.numbers {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.number {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.number__value {
+  font-size: 48px;
+  line-height: 1;
+  color: $color-orange;
 }
 

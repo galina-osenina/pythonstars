@@ -6,10 +6,6 @@
   @media (min-width: $tablet) {
     margin: 45px -15px;
   }
-
-  .card_bg_color {
-    background-color: rgba(112, 118, 149, 0.29);
-  }
 }
 
 .card-list_mt {
@@ -24,6 +20,40 @@
   margin-bottom: 0;
 }
 
+.card-list_tough {
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+
+  .card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0;
+    margin: 0;
+
+    &:first-child {
+      border-radius: 4px 4px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 4px 4px;
+    }
+
+    @media (min-width: $tablet) {
+      width: 25%;
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -31,17 +61,17 @@
   color: #f9f9f9;
   background-color: $color-tertiary;
   width: 100%;
+  min-height: 292px;
   border-radius: 4px;
   padding: 36px 20px;
-  margin: 10px 0;
-
-  @media (min-width: $tablet) {
-    width: 290px;
-    margin: 10px;
-  }
+  margin: 10px;
 
   @media (min-width: $tablet) and (max-width: $desctop) {
     width: 30%;
+  }
+
+  @media (min-width: $desctop) {
+    width: 290px;
   }
 
 }
@@ -50,6 +80,14 @@
   color: #04070b;
   background-color: #fff;
   border: 1px solid #d3d3d3;
+}
+
+.card_bg_dark {
+  background-color: rgba(112, 118, 149, 0.29);
+}
+
+.card_bg_orange {
+  background-color: $color-orange;
 }
 
 .card_size_md {
@@ -140,7 +178,11 @@
 }
 
 .card__text_mb {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
 }
 
 .technology-list {
