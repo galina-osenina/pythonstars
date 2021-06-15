@@ -61,6 +61,7 @@
   color: #f9f9f9;
   background-color: $color-tertiary;
   width: 100%;
+  min-height: 292px;
   border-radius: 4px;
   padding: 36px 20px;
   margin: 10px;
@@ -177,7 +178,11 @@
 }
 
 .card__text_mb {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+  }
 }
 
 .technology-list {
